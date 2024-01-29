@@ -436,7 +436,7 @@ if ($("#"+x.id).is(':checked') == false) {
 }
 $(".popup-btn").click(function() {
   $(".popup").fadeIn(500);
-  
+
 });
 $(".close").click(function() {
   $(".popup").fadeOut(500);
@@ -505,4 +505,7 @@ if ($("#"+id).is(':checked')) {
 if ($("#"+id).is(':checked') == false) {
   $("."+id).attr("disabled", true);
 };
+}
+function sorting(){
+  alert('hello');
 }

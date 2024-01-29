@@ -1833,3 +1833,12 @@ margin: 18px 12px;
 border-bottom: 1px solid rgb(192, 208, 198);
 padding: 3px 0;
 }
+.container .subcontainer .replenishment-datatb table td span.sorting{
+  cursor: pointer;
+}
+.container .subcontainer .replenishment-datatb table td span.sorting img{
+  width: 12px;
+}
+.container .subcontainer .replenishment-datatb table td span.sorting img.down{
+  display: none;
+}
