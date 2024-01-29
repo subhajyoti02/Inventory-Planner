@@ -1835,10 +1835,18 @@ padding: 3px 0;
 }
 .container .subcontainer .replenishment-datatb table td span.sorting{
   cursor: pointer;
+  user-select: none;
+  margin-right: 12px; 
 }
 .container .subcontainer .replenishment-datatb table td span.sorting img{
   width: 12px;
 }
 .container .subcontainer .replenishment-datatb table td span.sorting img.down{
   display: none;
+}
+.container .subcontainer .replenishment-datatb table td.parent-child{
+  padding-left: 30px;
+}
+.container .subcontainer .replenishment-datatb table td.sub-child{
+  padding-left: 55px;
 }

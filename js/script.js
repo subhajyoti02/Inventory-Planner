@@ -507,5 +507,13 @@ if ($("#"+id).is(':checked') == false) {
 };
 }
 function sorting(){
-  alert('hello');
+
+if ($(".down").css("display") == "none") { 
+  $(".up").css("display","none");
+$(".down").css("display","inline-block"); 
+} 
+else{ 
+  $(".up").css("display","inline-block");
+$(".down").css("display","none"); 
+} 
 }
