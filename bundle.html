@@ -323,7 +323,261 @@
                                 </tr>
                                     </table>
                          </div>  
+                         <div class="list-setting">
+                            <div class="list-setting-section">
+                                <div class="section-a">
+                                    <h3 class="popup-head">Settings</h3>
+                                    <p class="popup-p">Override Brand</p>
+                                    <select class="ov-brand">
+                                        <option value="burberry">burberry</option>
+                                        <option value="collette">collette</option>
+                                        <option value="demo food">demo food</option>
+                                        <option value="demo furniture">demo furniture</option>
+                                        <option value="french connection">french connection</option>
+                                        <option value="g-star">g-star</option>
+                                        <option value="harper">harper</option>
+                                        <option value="mango">mango</option>
+                                        <option value="paul smith">paul smith</option>
+                                        <option value="unknown">unknown</option>
+                                    </select>
+                                    <p class="popup-p">CBM</p>
+                                   <input type="text" name="cbm" class="cbm">
+                                   <p class="msg"><small>Cubic meters</small></p>
+                                </div>
+                                <div class="section-b">
+                                    <select>
+                                        <option value="beauty">beauty</option>
+                                        <option value="summer">summer</option>
+                                        </select>
+                                        <p class="msg"><small>Custom tags in Inventory Planner. IP tags are automatically set for all variants of the same product</small></p>
+                                        <div class="weight">
+                                            <p>Net Weight</p>
+                                            <input type="text" name="net-weight" id="net-weight">
+                                        </div>
+                                        <div class="weight">
+                                            <p>Gross Weight</p>
+                                            <input type="text" name="gross-weight" id="gross-weight">
+                                        </div>
+                                    </div>
+                            </div>
+                         </div>
+
                     </div>
+                    <div class="warehouses">
+                        <table>
+                            <tr>
+                                <td>Warehouse</td>
+                                <td>Stock</td>
+                                <td>Lead Time</td>
+                                <td>Days of Stock</td>
+                                <td>Min Safety Stock </td>
+                                <td>Max Stock</td>
+                                <td>Order Limit</td>
+                                <td>Transfer UOM</td>
+                                <td>Custom Alert</td>
+                                <td>Enable Alert</td>
+                                <td>Notify in Advance</td>
+                            </tr>
+                            <tr>
+                                <td>Shopify US Warehouse</td>
+                                <td>1</td>
+                                <td><input type="text" name="ltime" value="14" class="min-size"></td>
+                                <td><input type="text" name="dayofstock" value="30" class="min-size"></td>
+                                <td><input type="text" name="minstock" value="" class="max-size"></td>
+                                <td><input type="text" name="maxstock" value="" class="min-size"></td>
+                                <td> </td>
+                                <td><input type="text" name="maxstock" value="" class="min-size"></td>
+                                <td><input type="checkbox" name="c-alert" id="wus1" value="1" onchange="activealert(this)"></td>
+                                <td><input type="checkbox" name="e-alert" class="wus1" value="1" disabled></td>
+                                <td><input type="checkbox" name="c-alert" class="wus1" value="1" disabled></td>
+                            </tr>
+                            <tr>
+                                <td>Shopify UK Warehouse</td>
+                                <td>1</td>
+                                <td><input type="text" name="ltime" value="14" class="min-size"></td>
+                                <td><input type="text" name="dayofstock" value="30" class="min-size"></td>
+                                <td><input type="text" name="minstock" value="" class="max-size"></td>
+                                <td><input type="text" name="maxstock" value="" class="min-size"></td>
+                                <td> </td>
+                                <td><input type="text" name="maxstock" value="" class="min-size"></td>
+                                <td><input type="checkbox" name="c-alert" id="wuk" value="1" onchange="activealert(this)"></td>
+                                <td><input type="checkbox" name="e-alert" class="wuk" value="1" disabled></td>
+                                <td><input type="checkbox" name="c-alert" class="wuk" value="1" disabled></td>
+                            </tr>
+                            <tr>
+                                <td>FBA CA</td>
+                                <td>1</td>
+                                <td><input type="text" name="ltime" value="14" class="min-size"></td>
+                                <td><input type="text" name="dayofstock" value="30" class="min-size"></td>
+                                <td><input type="text" name="minstock" value="" class="max-size"></td>
+                                <td><input type="text" name="maxstock" value="" class="min-size"></td>
+                                <td> </td>
+                                <td><input type="text" name="maxstock" value="" class="min-size"></td>
+                                <td><input type="checkbox" name="c-alert" id="fca" value="1" onchange="activealert(this)"></td>
+                                <td><input type="checkbox" name="e-alert" class="fca" value="1" disabled></td>
+                                <td><input type="checkbox" name="c-alert" class="fca" value="1" disabled></td>
+                            </tr>
+                            <tr>
+                                <td>FBA MX</td>
+                                <td>1</td>
+                                <td><input type="text" name="ltime" value="14" class="min-size"></td>
+                                <td><input type="text" name="dayofstock" value="30" class="min-size"></td>
+                                <td><input type="text" name="minstock" value="" class="max-size"></td>
+                                <td><input type="text" name="maxstock" value="" class="min-size"></td>
+                                <td> </td>
+                                <td><input type="text" name="maxstock" value="" class="min-size"></td>
+                                <td><input type="checkbox" name="c-alert" id="fmx" value="1" onchange="activealert(this)"></td>
+                                <td><input type="checkbox" name="e-alert" class="fmx" value="1" disabled></td>
+                                <td><input type="checkbox" name="c-alert" class="fmx" value="1" disabled></td>
+                            </tr>
+                            <tr>
+                                <td>FBA US</td>
+                                <td>1</td>
+                                <td><input type="text" name="ltime" value="14" class="min-size"></td>
+                                <td><input type="text" name="dayofstock" value="30" class="min-size"></td>
+                                <td><input type="text" name="minstock" value="" class="max-size"></td>
+                                <td><input type="text" name="maxstock" value="" class="min-size"></td>
+                                <td> </td>
+                                <td><input type="text" name="maxstock" value="" class="min-size"></td>
+                                <td><input type="checkbox" name="c-alert" id="fus" value="1" onchange="activealert(this)"></td>
+                                <td><input type="checkbox" name="e-alert" class="fus" value="1" disabled></td>
+                                <td><input type="checkbox" name="c-alert" class="fus" value="1" disabled></td>
+                            </tr>
+                            <tr>
+                                <td>FBM</td>
+                                <td>1</td>
+                                <td><input type="text" name="ltime" value="14" class="min-size"></td>
+                                <td><input type="text" name="dayofstock" value="30" class="min-size"></td>
+                                <td><input type="text" name="minstock" value="" class="max-size"></td>
+                                <td><input type="text" name="maxstock" value="" class="min-size"></td>
+                                <td> </td>
+                                <td><input type="text" name="maxstock" value="" class="min-size"></td>
+                                <td><input type="checkbox" name="c-alert" id="fbm" value="1" onchange="activealert(this)"></td>
+                                <td><input type="checkbox" name="e-alert" class="fbm" value="1" disabled></td>
+                                <td><input type="checkbox" name="c-alert" class="fbm" value="1" disabled></td>
+                            </tr>
+                            <tr>
+                                <td>FBA UK</td>
+                                <td>1</td>
+                                <td><input type="text" name="ltime" value="14" class="min-size"></td>
+                                <td><input type="text" name="dayofstock" value="30" class="min-size"></td>
+                                <td><input type="text" name="minstock" value="" class="max-size"></td>
+                                <td><input type="text" name="maxstock" value="" class="min-size"></td>
+                                <td> </td>
+                                <td><input type="text" name="maxstock" value="" class="min-size"></td>
+                                <td><input type="checkbox" name="c-alert" id="fuk" value="1" onchange="activealert(this)"></td>
+                                <td><input type="checkbox" name="e-alert" class="fuk" value="1" disabled></td>
+                                <td><input type="checkbox" name="c-alert" class="fuk" value="1" disabled></td>
+                            </tr>
+                            <tr>
+                                <td>Combined All</td>
+                                <td>1</td>
+                                <td><input type="text" name="ltime" value="14" class="min-size"></td>
+                                <td><input type="text" name="dayofstock" value="30" class="min-size"></td>
+                                <td><input type="text" name="minstock" value="" class="max-size"></td>
+                                <td><input type="text" name="maxstock" value="" class="min-size"></td>
+                                <td> </td>
+                                <td><input type="text" name="maxstock" value="" class="min-size"></td>
+                                <td><input type="checkbox" name="c-alert" id="call" value="1" onchange="activealert(this)"></td>
+                                <td><input type="checkbox" name="e-alert" class="call" value="1" disabled></td>
+                                <td><input type="checkbox" name="c-alert" class="call" value="1" disabled></td>
+                            </tr>
+                        </table>
+                     </div>
+                     <div class="bundle-production">
+                        <h3 class="top-head">Item Type</h3>
+                            <input type="radio" name="item-type" value="simple-variant" disabled> Simple-Variant
+                            <input type="radio" name="item-type" value="bundle" disabled> Bundle
+                            <input type="radio" name="item-type" value="assembly" disabled> Assembly
+                            <h3 class="table-header">Components</h3>
+                            <table>
+                                <tr>
+                                    <td></td>
+                                    <td>Name</td>
+                                    <td>Details</td>
+                                    <td>Quantity</td>
+                                    <td>Vendor</td>
+                                    <td>Cost Price</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="image/FRENCH-CONN.jpg" class="mid-image"></td>
+                                    <td>	
+                                        <p>French Connection, straw bag</p>
+                                        <small>FRENCH-CONN  12234567890132</small></td>
+                                    <td><a href="replenishment.html"><img src="icon/table/question-mark.png"></a></td>
+                                    <td>1.000</td>
+                                    <td>supplier us</td>
+                                    <td>11.88</td>
+                                </tr>
+                            </table>
+                     </div>
+                     <div class="about-onorder">
+                        <div class="count-order">
+                            <p>On Order</p>
+                            <p class="no-of-order">0</p>
+                        </div>
+                        <h3 class="a-orders">Active Orders</h3>
+                        <div class="scrollable">
+                            <table>
+                                <tr>
+                                    <td>PO #</td>
+                                    <td>Status</td>
+                                    <td>From</td>
+                                    <td>Warehouse</td>
+                                    <td>Created Date</td>
+                                    <td>Expected Date</td>
+                                    <td>Ordered</td>
+                                    <td>Received</td>
+                                    <td>Remaining</td>   
+                                    <td>Received Date</td>                                 
+                                </tr>
+                            </table>
+                           
+                        </div>
+                        <div class="controll-area">
+                            <select name="entries" id="entries">
+                                <option value="10">10</option>
+                                <option value="10">20</option>
+                                <option value="10">50</option>
+                                <option value="10">100</option>
+                            </select>
+                            <button class="first">First </button>
+                            <button class="prev general"><img src="icon/left.png"></button>
+                            <span>Page 1/10</span>
+                            <button class="prev general"><img src="icon/right.png"></button>
+                        </div>
+                        <div><small>All purchase orders and transfers</small></div>
+                     </div>
+                     <div class="about-history">
+                        <div class="controll-area">
+                            <select name="entries" id="entries">
+                                <option value="10">10</option>
+                                <option value="10">20</option>
+                                <option value="10">50</option>
+                                <option value="10">100</option>
+                            </select>
+                            <button class="first">First </button>
+                            <button class="prev general"><img src="icon/left.png"></button>
+                            <span>Page 1/10</span>
+                            <button class="prev general"><img src="icon/right.png"></button>
+                        </div>
+                        <table>
+                            <tr>
+                                <td>Time</td>
+                                <td>Details</td>
+                                <td>Action</td>
+                                <td>User</td>
+                            </tr>
+                            <tr>
+                                <td>Jan 29, 2024 12:00 am</td>
+                                <td><p>Change Alerted to Yes from No</p>
+                                <p>Change Alerted Since to Jan 29, 2024 12:00 am</p></td>
+                                <td><p>Sync (Amazon UK)</p>
+                                    <p>Sync (Amazon UK)</p></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                     </div>
                        
                                   </div>
                                   <div class="select-varients">

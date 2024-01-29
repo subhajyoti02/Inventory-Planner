@@ -1716,3 +1716,120 @@ width: 53px;
 .container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .listing-sec .tcell{
   overflow-x: scroll;
 }
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .listing-sec .list-setting
+{
+  padding: 20px 0px;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .listing-sec .list-setting  p.popup-p{
+  margin: 12px 0;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .listing-sec .list-setting select{
+  padding-left: 12px;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .listing-sec .list-setting-section{
+  display: flex;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .listing-sec .list-setting-section .section-b{
+  padding-top: 65px;
+  padding-left: 60px;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .listing-sec .list-setting-section .section-b div.weight{
+margin:10px 0px;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .listing-sec .list-setting-section .section-b div.weight p{
+  margin:5px 0px;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .warehouses{
+  overflow-x: scroll;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .warehouses input[type=text].min-size{
+  width:45px;
+  padding-right: 5px;
+    padding-left: 5px;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .warehouses input[type=text].max-size{
+  width:90px;
+  padding-right: 5px;
+    padding-left: 5px;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .bundle-production
+{
+  padding: 20px 0px;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .bundle-production h3.top-head{
+  margin:10px 2px;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .bundle-production table td img.mid-image{
+  width: 35px;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .bundle-production h3.table-header{
+  margin-top: 62px;
+  border-top: 1px solid #ddece4;
+  padding: 20px 0;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .about-onorder .count-order{
+  background: #c2bdfd8a;
+width: 100px;
+padding: 6px 12px;
+border-radius: 5px;
+text-align: center;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .about-onorder h3.a-orders{
+  padding: 15px 0px;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .about-onorder div.scrollable{
+  overflow-x: scroll;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .about-onorder button.first{
+  padding: 8px 25px;
+background: #e9e9ed;
+color: black;
+margin: 18px 12px;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .about-onorder select#entries{
+  padding-left:9px
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .about-onorder button.general{
+  margin: 5px;
+  background: #e9e9ed;
+  position: relative;
+  top: 6px;
+  padding: 0;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .about-onorder button.general img{
+  width: 18px;
+  padding: 4px 0px;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .about-onorder small{
+  margin:10px 0px;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .about-history .controll-area{
+  text-align:right;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .about-history button.first{
+  padding: 8px 25px;
+background: #e9e9ed;
+color: black;
+margin: 18px 12px;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .about-history select#entries{
+  padding-left:9px
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .about-history button.general{
+  margin: 5px;
+  background: #e9e9ed;
+  position: relative;
+  top: 6px;
+  padding: 0;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .about-history button.general img{
+  width: 18px;
+  padding: 4px 0px;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .about-history small{
+  margin:10px 0px;
+}
+.container .subcontainer .replenishment-datatb table td.name .popup .all-tabs .about-history table p{
+border-bottom: 1px solid rgb(192, 208, 198);
+padding: 3px 0;
+}

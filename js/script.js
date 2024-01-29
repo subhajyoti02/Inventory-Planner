@@ -436,6 +436,7 @@ if ($("#"+x.id).is(':checked') == false) {
 }
 $(".popup-btn").click(function() {
   $(".popup").fadeIn(500);
+  
 });
 $(".close").click(function() {
   $(".popup").fadeOut(500);
@@ -495,4 +496,13 @@ function exitVariants(){
 }
 function openFiltering(x){
   $("#more-tools2").toggleClass('allvisible');
+}
+function activealert(x){
+let id=x.id;
+if ($("#"+id).is(':checked')) {
+  $("."+id).removeAttr("disabled");
+};
+if ($("#"+id).is(':checked') == false) {
+  $("."+id).attr("disabled", true);
+};
 }
